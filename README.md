@@ -6,7 +6,7 @@ It obtains heuristic routes, solving the CVRP (Capacitated Vehicle Routing Probl
 
 ## Set Up
 
-This project uses Python. 
+This project uses Python.
 Start by creating a virtual environment (or conda environment).
 
 Install the project requirements.
@@ -44,6 +44,7 @@ python3 main.py --input-dir ./input --output-dir ./output
 The following input files should be set up in the input dir.
 
 - `riders.json` => Information regarding riders: id's and drop-off location.
+
 ```json
 [
     {
@@ -56,6 +57,7 @@ The following input files should be set up in the input dir.
 ```
 
 - `depots.json` => Information regarding depots (school and optional parking lots): id's and location.
+
 ```json
 [
     {
@@ -68,6 +70,7 @@ The following input files should be set up in the input dir.
 ```
 
 - `vehicles.json` => Information regarding school buses: id's, capacity, start and end location.
+
 ```json
 [
     {
@@ -81,6 +84,7 @@ The following input files should be set up in the input dir.
 ```
 
 - `params.json` => Information regarding service params. Full list in `./models/params.py`.
+
 ```json
 {
     "GEOHASH_PRECISION_GROUPING": 8,
@@ -106,3 +110,6 @@ optional arguments:
   --output-dir OUTPUT_DIR
                         Directory for reading the Output. Default is ./output
 ```
+
+video that explain all
+https://www.youtube.com/watch?v=T1f_16CYDgY
